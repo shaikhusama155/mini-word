@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+#fontsize {
+    width: 60px;
+    height: 20px;
+    border: none;
+    margin: 5px;
+}
+
+
+#red {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+#blue {
+    background-color: rgb(17, 15, 153);
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+#yellow {
+    background-color: rgb(242, 236, 55);
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#green {
+    background-color: rgb(31, 234, 48);
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#uppercase {
+    width: 80px;
+}
+
+#lowercase {
+    width: 80px;
+}
+
+textarea {
+    width: 800px;
+    height: 300px;
+}
