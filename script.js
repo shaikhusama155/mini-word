@@ -8,6 +8,7 @@ let u = document.getElementById('u')
 let fontSize = document.getElementById('fontsize')
 let upcase = document.getElementById('uppercase')
 let locase = document.getElementById('lowercase')
+let capital = document.getElementById('capital')
 let textArea = document.getElementById('textarea')
 
 
@@ -40,6 +41,20 @@ locase.addEventListener('click', function () {
     let textArea = document.getElementById('textarea')
     textArea.value = textArea.value.toLowerCase()
 })
+capital.addEventListener('click', function () {
+    let textArea = document.getElementById('textarea');
+    let name1 = textArea.value.split(" ");
+
+    let finalString = "";
+    for (let i = 0; i < name1.length; i++) {
+        let new1 = name1[i].charAt(0).toUpperCase() + name1[i].slice(1);
+        finalString = finalString + new1;
+        finalString = finalString + " ";
+    }
+    
+    textArea.value = finalString.trim();
+});
+
 fontSize.addEventListener('click', function () {
     fz = prompt('Enter font size')
     textArea.style.fontSize = fz + 'px'

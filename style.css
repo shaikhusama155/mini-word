@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(12, 126, 126);
+}
 
 .container {
     justify-content: center;
@@ -18,6 +21,7 @@ button {
     border: none;
     margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
 
 }
 
@@ -67,8 +71,11 @@ button {
 #lowercase {
     width: 80px;
 }
-
+#capital{
+    width: 80px;
+}
 textarea {
     width: 800px;
-    height: 300px;
+    height: 500px;
+    border: 3px solid black;
 }
